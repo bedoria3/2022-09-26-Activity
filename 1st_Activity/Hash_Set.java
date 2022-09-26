@@ -1,11 +1,13 @@
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Scanner;
 
-public class Hash_Set {
-    public static void main(String[] args){
+public class Hash_Set{
+
+    public static void main(String[] args) {
         HashSet<String> info = new HashSet<String>();
         Scanner sc = new Scanner(System.in);
-        System.out.println("What is your name?" );
+        System.out.println("What is your name?");
         String name = sc.nextLine();
         System.out.println("What is your favorite food");
         String food = sc.nextLine();
@@ -15,16 +17,18 @@ public class Hash_Set {
         String address = sc.nextLine();
         System.out.println("Where are you studying?");
         String school = sc.nextLine();
-       
+
         info.add(name);
         info.add(food);
         info.add(color);
         info.add(address);
-        info.add(school);  
+        info.add(school);
         
-        System.out.println(info);
-        
-        
-         }
+        Iterator it = info.iterator();
+        while (it.hasNext()) {
+            System.out.println(it.next());
+        }
+
+    }
 }
 

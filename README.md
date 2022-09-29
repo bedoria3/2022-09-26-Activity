@@ -1,2 +1,2 @@
 # Activity
-Added fisrt activity
+Added first activity
